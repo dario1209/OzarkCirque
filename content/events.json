@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "midsummer-aerial-2026",
+    "title": "Midsummer Aerial Evening",
+    "date": "2026-07-18",
+    "venue": "Crystal Bridges grounds, Bentonville AR",
+    "image": "midsummer.jpg",
+    "imageAlt": "Outdoor rig at dusk, silks lit warm against the trees",
+    "link": "",
+    "tag": "Performance"
+  },
+  {
+    "slug": "fall-intensive-2026",
+    "title": "Fall Aerial Foundations Intensive",
+    "date": "2026-09-12",
+    "venue": "Ozark Cirque studio, Fayetteville AR",
+    "image": "intensive.jpg",
+    "imageAlt": "Studio with low-rigged silks and mats in morning light",
+    "link": "",
+    "tag": "Workshop"
+  },
+  {
+    "slug": "winter-showcase-2025",
+    "title": "Winter Showcase",
+    "date": "2025-12-13",
+    "venue": "Walton Arts Center, Fayetteville AR",
+    "image": "winter.jpg",
+    "imageAlt": "Cast bows under stage light after the winter showcase",
+    "link": "",
+    "tag": "Performance"
+  },
+  {
+    "slug": "first-thursday-2025",
+    "title": "First Thursday Pop-up",
+    "date": "2025-10-02",
+    "venue": "Downtown Bentonville Square",
+    "image": "popup.jpg",
+    "imageAlt": "Aerial hoop performance over a street crowd at golden hour",
+    "link": "",
+    "tag": "Performance"
+  }
+]

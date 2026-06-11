@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #000500;
+  --paper: #ffffe2;
+  --cream: #fffcd6;
+  --plum: #7e286e;
+  --plum-deep: #882660;
+  --aubergine: #272034;
+  --gold: #f5cf0c;
+  --crimson: #db3f46;
+  --tangerine: #f47a20;
+  --teal: #64a7ad;
+  --jade: #1d9371;
+  --gray: #a6a1ae;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-hanken), sans-serif;
+  font-weight: 300;
+  line-height: 1.65;
+}
+
+/* Display type */
+.display {
+  font-family: var(--font-instrument), serif;
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.015em;
+}
+
+.eyebrow {
+  font-family: var(--font-hanken), sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 400;
+}
+
+/* Scroll reveal — subtle rise + fade, long ease */
+.reveal {
+  opacity: 0;
+  transform: translateY(1.25rem);
+  transition: opacity 800ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 800ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+a {
+  transition: color 300ms ease, opacity 300ms ease;
+}
+
+.prose-writing p {
+  margin-bottom: 1.5em;
+  max-width: 65ch;
+}
+.prose-writing h2,
+.prose-writing h3 {
+  font-family: var(--font-instrument), serif;
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 2.5em 0 0.75em;
+}
+.prose-writing h2 { font-size: 1.875rem; }
+.prose-writing h3 { font-size: 1.5rem; }
+.prose-writing blockquote {
+  font-family: var(--font-instrument), serif;
+  font-style: italic;
+  font-size: 1.375rem;
+  line-height: 1.4;
+  border-left: 2px solid var(--plum);
+  padding-left: 1.5rem;
+  margin: 2em 0;
+  color: var(--aubergine);
+}
+.prose-writing a {
+  color: var(--plum);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
