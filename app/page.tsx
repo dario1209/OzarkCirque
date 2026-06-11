@@ -21,7 +21,7 @@ export default function Home() {
           className="absolute inset-0 h-full w-full object-cover"
           aria-hidden="true"
         >
-          <source src="/images/newhero.mp4" type="video/mp4" />
+          <source src="/images/newhero2.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent" />
         <div className="relative mx-auto w-full max-w-6xl px-6 pb-24">
