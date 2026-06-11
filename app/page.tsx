@@ -11,13 +11,13 @@ export default function Home() {
   return (
     <div className="bg-ink text-cream">
       {/* Hero */}
-      <section className="relative flex min-h-[85vh] items-end overflow-hidden">
+      <section className="relative flex h-screen items-end overflow-hidden">
         <video
           autoPlay
           muted
           loop
           playsInline
-          poster="/images/background-brand-dark.jpg"
+          
           className="absolute inset-0 h-full w-full object-cover"
           aria-hidden="true"
         >
