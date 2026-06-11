@@ -13,20 +13,19 @@ export default function Home() {
       {/* Hero */}
       <section className="relative flex min-h-screen items-end">
         <Frame
-          alt="Brittany Paul suspended on aerial silks, mid-inversion, stage light from above"
+          alt="Aerial silks performance, performer mid-inversion, stage light from above"
           aspect=""
           className="absolute inset-0"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent" />
         <div className="relative mx-auto w-full max-w-6xl px-6 pb-24">
-        <p className="eyebrow text-gray">Performing artist · aerial educator</p>
-<h1 className="display mt-4 text-[clamp(3rem,8vw,7rem)]">
-  Brittany Paul
-</h1>
-<p className="mt-4 max-w-md text-cream/70">
-  Aerial performance and the <i className="font-serif">art</i> of
-  suspension, from Northwest Arkansas.
-</p>
+          <p className="eyebrow text-gray">Aerial arts · Northwest Arkansas</p>
+          <h1 className="display mt-4 text-[clamp(3rem,8vw,7rem)]">
+            Ozark Cirque
+          </h1>
+          <p className="mt-4 max-w-md text-cream/70">
+            Performance, teaching, and writing from Brittany Paul.
+          </p>
         </div>
       </section>
 
@@ -59,7 +58,7 @@ export default function Home() {
         <div className="grid items-center gap-12 md:grid-cols-2">
           <Reveal className="md:order-2">
             <Frame
-              alt="Students on low silks in a studio, daylight, Brittany spotting"
+              alt="Students on low silks in a studio, daylight, instructor spotting"
               tone="dark"
               aspect="aspect-[4/3]"
             />
