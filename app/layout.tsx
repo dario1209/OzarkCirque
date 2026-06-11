@@ -3,6 +3,7 @@ import { Instrument_Serif, Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import CursorDot from "@/components/CursorDot";
 
 const instrument = Instrument_Serif({
   weight: "400",
@@ -40,10 +41,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${instrument.variable} ${hanken.variable}`}>
       <body className="bg-ink text-cream antialiased">
+      <CursorDot />
         <Nav />
         <main id="main">{children}</main>
         <Footer />
       </body>
+      
     </html>
   );
 }
