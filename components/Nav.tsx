@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
+
 const LIGHT_ROUTES = ["/about", "/teaching", "/writing", "/contact"];
 
 const links = [
@@ -16,21 +17,26 @@ const links = [
 
 export default function Nav() {
   const pathname = usePathname();
-  const onLight = pathname === "/" || LIGHT_ROUTES.some((r) => pathname.startsWith(r));
-  const base = onLight ? "text-ink" : "text-cream";
+  const onLight = LIGHT_ROUTES.some((r) => pathname.startsWith(r));
   const muted = onLight ? "text-aubergine/60" : "text-cream/60";
 
   return (
     <header
-      className={`absolute top-0 left-0 right-0 z-20 ${base}`}
+      className={`absolute top-0 left-0 right-0 z-20 ${
+        onLight ? "text-ink" : "text-cream"
+      }`}
     >
       <nav
         aria-label="Primary"
-        className="mx-auto flex max-w-6xl flex-wrap items-baseline justify-between gap-y-3 px-6 py-8"
+        className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-y-3 px-6 py-6"
       >
-        <Link href="/" className="flex items-center gap-3">
+        <Link href="/" className="flex items-center">
           <Image
-            src={onLight ? "/images/logo-aubergine.png" : "/images/logo-cream.png"}
+            src={
+              onLight || pathname === "/"
+                ? "/images/logo-aubergine.png"
+                : "/images/logo-cream.png"
+            }
             alt="Ozark Cirque"
             width={48}
             height={48}
