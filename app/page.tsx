@@ -2,6 +2,7 @@ import Link from "next/link";
 import Frame from "@/components/Frame";
 import Reveal from "@/components/Reveal";
 import events from "@/content/events.json";
+import Image from "next/image";
 
 export default function Home() {
   const next = events
@@ -12,10 +13,13 @@ export default function Home() {
     <div className="bg-ink text-cream">
       {/* Hero */}
       <section className="relative flex min-h-screen items-end">
-        <Frame
-          alt="Aerial silks performance, performer mid-inversion, stage light from above"
-          aspect=""
-          className="absolute inset-0"
+      <Image
+          src="/images/hero.jpg"
+          alt="Aerialist balancing atop silks above a festival stage at night, band and crowd below"
+          fill
+          priority
+          className="object-cover object-top"
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent" />
         <div className="relative mx-auto w-full max-w-6xl px-6 pb-24">

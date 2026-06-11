@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
+import Image from "next/image";
 const LIGHT_ROUTES = ["/about", "/teaching", "/writing", "/contact"];
 
 const links = [
@@ -28,8 +28,13 @@ export default function Nav() {
         aria-label="Primary"
         className="mx-auto flex max-w-6xl flex-wrap items-baseline justify-between gap-y-3 px-6 py-8"
       >
-        <Link href="/" className="eyebrow tracking-[0.16em] hover:text-plum">
-        Ozark Cirque
+        <Link href="/" className="flex items-center gap-3">
+          <Image
+            src={onLight ? "/images/logo-aubergine.png" : "/images/logo-cream.png"}
+            alt="Ozark Cirque"
+            width={48}
+            height={48}
+          />
         </Link>
         <ul className="flex flex-wrap gap-x-6 gap-y-2">
           {links.map((l) => {
