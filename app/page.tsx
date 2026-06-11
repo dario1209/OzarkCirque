@@ -19,14 +19,14 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent" />
         <div className="relative mx-auto w-full max-w-6xl px-6 pb-24">
-          <p className="eyebrow text-gray">Performing artist · aerial educator</p>
-          <h1 className="display mt-4 text-[clamp(3rem,8vw,7rem)]">
-            Brittany Paul
-          </h1>
-          <p className="mt-4 max-w-md text-cream/70">
-            Aerial performance and the <i className="font-serif">art</i> of
-            suspension, from Northwest Arkansas.
-          </p>
+        <p className="eyebrow text-gray">Performing artist · aerial educator</p>
+<h1 className="display mt-4 text-[clamp(3rem,8vw,7rem)]">
+  Brittany Paul
+</h1>
+<p className="mt-4 max-w-md text-cream/70">
+  Aerial performance and the <i className="font-serif">art</i> of
+  suspension, from Northwest Arkansas.
+</p>
         </div>
       </section>
 

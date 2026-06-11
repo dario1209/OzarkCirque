@@ -29,7 +29,7 @@ export default function Nav() {
         className="mx-auto flex max-w-6xl flex-wrap items-baseline justify-between gap-y-3 px-6 py-8"
       >
         <Link href="/" className="eyebrow tracking-[0.16em] hover:text-plum">
-          Brittany Paul
+        Ozark Cirque
         </Link>
         <ul className="flex flex-wrap gap-x-6 gap-y-2">
           {links.map((l) => {
