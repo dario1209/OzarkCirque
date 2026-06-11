@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Frame from "@/components/Frame";
 import Reveal from "@/components/Reveal";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About",
@@ -21,10 +22,15 @@ export default function About() {
 
         <div className="mt-24 grid gap-16 md:grid-cols-[1fr_1.2fr]">
           <Reveal>
-            <Frame
-              alt="Portrait of Brittany Paul in the studio, resting a hand on hung silks"
-              tone="light"
-            />
+          <div className="relative aspect-[3/4] overflow-hidden">
+              <Image
+                src="/images/portrait.jpg"
+                alt="Brittany Paul in a sculptural hooded costume, lit like a chiaroscuro painting"
+                fill
+                className="object-cover"
+                sizes="(min-width: 768px) 45vw, 100vw"
+              />
+            </div>
           </Reveal>
           <Reveal className="max-w-prose space-y-6 text-lg leading-relaxed text-aubergine">
             <p>
