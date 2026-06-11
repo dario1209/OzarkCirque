@@ -16,7 +16,7 @@ const links = [
 
 export default function Nav() {
   const pathname = usePathname();
-  const onLight = LIGHT_ROUTES.some((r) => pathname.startsWith(r));
+  const onLight = pathname === "/" || LIGHT_ROUTES.some((r) => pathname.startsWith(r));
   const base = onLight ? "text-ink" : "text-cream";
   const muted = onLight ? "text-aubergine/60" : "text-cream/60";
 

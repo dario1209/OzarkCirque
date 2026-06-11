@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+
 import Reveal from "@/components/Reveal";
 import events from "@/content/events.json";
 
@@ -11,27 +11,27 @@ export default function Home() {
   return (
     <div className="bg-ink text-cream">
       {/* Hero */}
-      <section className="relative">
-        <Image
-          src="/images/hero.jpg"
-          alt="Aerialist balancing atop silks above a festival stage at night, band and crowd below"
-          width={1058}
-          height={772}
-          priority
-          className="h-auto w-full"
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent" />
-        <div className="absolute inset-x-0 bottom-0">
-          <div className="mx-auto w-full max-w-6xl px-6 pb-12">
-            <p className="eyebrow text-gray">Aerial arts · Northwest Arkansas</p>
-            <h1 className="display mt-4 text-[clamp(3rem,8vw,7rem)]">
-              Ozark Cirque
-            </h1>
-            <p className="mt-4 max-w-md text-cream/70">
-              Performance, teaching, and writing from Brittany Paul.
-            </p>
-          </div>
+      <section className="relative flex min-h-[85vh] items-end overflow-hidden">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/images/background-brand-dark.jpg"
+          className="absolute inset-0 h-full w-full object-cover"
+          aria-hidden="true"
+        >
+          <source src="/images/newhero.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent" />
+        <div className="relative mx-auto w-full max-w-6xl px-6 pb-24">
+          <p className="eyebrow text-gray">Aerial arts · Northwest Arkansas</p>
+          <h1 className="display mt-4 text-[clamp(3rem,8vw,7rem)]">
+            Ozark Cirque
+          </h1>
+          <p className="mt-4 max-w-md text-cream/70">
+            Performance, teaching, and writing from Brittany Paul.
+          </p>
         </div>
       </section>
 
